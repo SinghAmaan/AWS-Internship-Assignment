@@ -40,6 +40,17 @@
 | **Server 1**         | `10.0.101.66`  | `3.235.15.224`   | `us-east-1a`      |
 | **Server 2**         | `10.0.102.174` | `18.208.107.126` | `us-east-1b`      |
 
+**Security Group**
+Security Group Name: 'BATCH3-ALB-SG'
+**Inbound Rules**
+ALL ICMP - IPv4
+SSH (Port 22)
+HTTP (Port 80)
+**Outbound Rules**
+Allow all outbound traffic
+
+
+
 ## Summary
 
 - The `BATCH3-ALB-VPC` spans three availability zones in `us-east-1`.
@@ -47,4 +58,4 @@
 - Internet access is provided through `BATCH3-ALB-IGW`.
 - The `BATCH3-ALB-ROUTE-TABLE` routes external traffic through the Internet Gateway.
 - Three servers are hosted across different availability zones, and private and public IPs are assigned.
-
+-This documentation outlines the VPC setup, subnet configuration, routing details, server information, and security policies in the BATCH3-ALB-VPC environment.
